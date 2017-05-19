@@ -27,4 +27,17 @@ php yii migrate/up --migrationPath=@frontend/modules/alcora/migrations
 ...
 ]
 ```
-- Для отправки писем пропишите Ваши настройки в файле frontend/config/main.php
+- Для отправки писем пропишите Ваши настройки для компонента mailer в файле frontend/config/main.php:
+```
+'components' => [
+...
+  'mailer' => [
+      'class' => 'yii\swiftmailer\Mailer',
+          'messageConfig' => [
+            'charset' => 'UTF-8',
+          ],
+          'useFileTransport' => false,
+  ],
+...
+]
+```
