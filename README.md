@@ -4,8 +4,27 @@
 
 Зависимости
 -----------
-1. kartik-v/yii2-widget-fileinput
+- kartik-v/yii2-widget-fileinput
 ```
 $ php composer.phar require kartik-v/yii2-widget-fileinput "@dev"
 ```
-
+Установка
+-----------
+- Клонируйте репозиторий
+- Скопируйте папку alcora в папку frontend/modules
+- Примените миграцию:
+```
+php yii migrate/up --migrationPath=@frontend/modules/alcora/migrations
+```
+- Добавьте в frontend/config/main.php следующие настройки:
+```
+'modules' => [
+...
+  'alcora' => [
+        'class' => 'frontend\modules\alcora\Alcora',
+        'defaultRoute' => 'main/index'
+  ],
+...
+]
+```
+- Для отправки писем пропишите Ваши настройки в файле frontend/config/main.php
