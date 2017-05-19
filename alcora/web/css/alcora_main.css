@@ -1,0 +1,26 @@
+.alcora-wrapper {
+    max-width: 840px;
+    padding: 30px 25px;
+    background-color: rgba(0, 0, 0, 0.09);
+    margin: 0 auto;
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
+}
+
+.alcora-send-button-row {
+    text-align: center;
+}
+
+.technique-block, .english-block {
+    display: inline-block;
+}
+
+.field-alcorauser-english .glyphicon,
+.field-alcorauser-technique .glyphicon,
+.add-photo-label {
+    margin-right: 10px;
+}
+
+.input-group-addon {
+    background-color: #fff;
+}
